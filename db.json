@@ -1,0 +1,28 @@
+{
+    "links": [
+        {
+            "id": "Iq8ZnW38",
+            "zoom_url": "https://google.com.br",
+            "created_at": "2025-11-19T20:53:40.657Z"
+        }
+    ],
+    "logs": [
+        {
+            "id": "3519ac3c-53da-4e7d-a222-3203a9206824",
+            "link_id": "Iq8ZnW38",
+            "ip": "177.129.0.40",
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+            "acceptLanguage": "pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+            "referer": null,
+            "acceptEncoding": "gzip, br",
+            "connection": "keep-alive",
+            "cfRay": "9a1298a8af54f249-GRU",
+            "cfCountry": "BR",
+            "country": "BR",
+            "region": "SP",
+            "city": "Garca",
+            "timezone": "America/Sao_Paulo",
+            "timestamp": "2025-11-19T20:53:43.964Z"
+        }
+    ]
+}

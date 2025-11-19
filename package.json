@@ -1,0 +1,24 @@
+{
+  "name": "redirect-tracker-jsondb",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@maxmind/geoip2-node": "^6.2.0",
+    "fastify": "^4.27.0",
+    "geoip-lite": "^1.4.10",
+    "maxmind": "^5.0.1",
+    "nanoid": "^4.0.2",
+    "simple-json-db": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/geoip-lite": "^1.4.4",
+    "@types/node": "^20.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.0"
+  }
+}

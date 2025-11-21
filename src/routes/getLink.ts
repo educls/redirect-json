@@ -1,6 +1,5 @@
 import { FastifyInstance } from "fastify";
 import db from "../db";
-import * as geoip from "geoip-lite";
 
 export default async function GetRoute(app: FastifyInstance) {
   app.get("/get/:id", async (req, reply) => {

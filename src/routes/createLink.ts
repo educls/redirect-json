@@ -12,21 +12,21 @@ export default async function createLinkRoute(app: FastifyInstance) {
 
     const id = nanoid(8);
 
+    const host = req.headers.host || 'localhost:3000';
+    const protocol = req.headers['x-forwarded-proto'] || 'http';
+
     const newLink = {
       id,
       zoom_url: body.zoom_url,
+      redirect_url: `${protocol}://${host}/r/${id}`,
       created_at: new Date().toISOString()
     };
 
     const links = db.get("links");
     links.push(newLink);
     db.set("links", links);
-
-    const host = req.headers.host || 'localhost:3000';
-    const protocol = req.headers['x-forwarded-proto'] || 'http';
     
     return reply.send({
-      redirect_url: `${protocol}://${host}/r/${id}`,
       data: newLink
     });
   });

@@ -15,6 +15,7 @@ export default async function redirectRoute(app: FastifyInstance) {
 
     // Captura IP real do Cloudflare
     const realIP = req.headers['cf-connecting-ip'] || req.headers['x-forwarded-for'] || req.ip;
+    
     const clientIP = Array.isArray(realIP) ? realIP[0] : realIP;
     
     const geo = geoip.lookup(clientIP);
